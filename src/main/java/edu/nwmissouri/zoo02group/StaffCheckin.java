@@ -11,43 +11,39 @@ import java.util.Scanner;
  *
  * @author Pavan Kumar Atmakuri
  */
-public class Checkin {
+public class StaffCheckin {
     private static  ArrayList<OrderedItem> itemOrders=new ArrayList<>();
     private static  ArrayList<OrderedDrink> drinkOrders= new ArrayList<>();
 
    /**
     * 
-    * @return itemOrdered List
+    * @return itemOrder List 
     */
     public static ArrayList<OrderedItem> getItemOrders() {
         return itemOrders;
     }
     /**
      * 
-     * @return drinkOrdered List
+     * @return drinkOrders List
      */
     public static ArrayList<OrderedDrink> getDrinkOrders() {
         return drinkOrders;
     }
 
-   
-   
-
-   
-    public Checkin() {
+    public StaffCheckin() {
     }
     /**
      * 
-     * @param id getting visitor id
-     * @param c getting type of entered
+     * @param id getting staff Id
+     * @param n type of entered person
      */
-    public void chooice(int id,int c) {
+    public void chooice(int id,int n) {
 
         Scanner s = new Scanner(System.in);
         
         int ch;
         do {
-            System.out.println("what you want to see\n1. visit the animals\n2. Food court\n3. exit");
+            System.out.println("what you want to see\n1. visit the animals\n2. Food court\n3. List visitors Data\n4. exit");
             ch = s.nextInt();
 
             switch (ch) {
@@ -117,15 +113,25 @@ public class Checkin {
 
                     } while (k != 3);
                 }
-                case 3 -> {
+                case 3 ->{
+                    System.out.println("----------------------------------------------------------------------");
+                    System.out.println(String.format("%-20s", "VISITERID")+""+String.format("%-30s", "NAME")+""+String.format("%-10s", "AGE")+""+String.format("%-20s", "GENDER"));
+                    System.out.println("----------------------------------------------------------------------");
+                    for(Visitor v:Visitor.getVisitorList()){
+                        System.out.println(String.format("%-20s", v.getVisitorId())+""+String.format("%-30s", v.getFirstName()+" "+v.getLastName())+""+String.format("%-10s", v.getAge())+""+String.format("%-20s", v.getGender()));
+                    }
+                    System.out.println("----------------------------------------------------------------------");
+                
+            }
+                case 4 -> {
                     Billing b = new Billing();
                     b.findCost();
-                    System.out.println(b.printBill(id,c));
+                    System.out.println(b.printBill(id,n));
                    
                 }
             }
-        } while (ch != 3);
+        } while (ch != 4);
 
     }
-
+    
 }

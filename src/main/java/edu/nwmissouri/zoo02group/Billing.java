@@ -42,7 +42,7 @@ public class Billing {
     }
 
     /**
-     * 
+     * calculating total price
      */
     public void findCost(){
         
@@ -58,18 +58,19 @@ public class Billing {
     }
 
     /**
-     *
+     * Returning bill formate 
      * @param id
-     * @return s
+     * @return s Bill formate returning 
      */
-    public String printBill(int id){
+    public String printBill(int id,int n){
        String s="";
        Checkin c=new Checkin();
+       if(n==1){
        for(Visitor v:Visitor.getVisitorList())
        {
            if(v.getVisitorId()==id)
            {
-               s=s+"-------------------------------------------------------\nVisitor Details\n-------------------------------------------------------\n"+v.toString()+"\n";
+               s=s+"-------------------------------------------------------\n\t\t     Visitor Details\n-------------------------------------------------------\n"+v.toString()+"\n";
            }
        }
        s=s+"-------------------------------------------------------\n"+String.format("%-35s","SELECTED ITEMS")+"PRICES\n-------------------------------------------------------\n"
@@ -81,7 +82,27 @@ public class Billing {
             s=s+String.format("%-35s",o.getDrinkName())+""+o.getDrinkName().getDrinkPrice()+"\n";
         }
         s=s+"-------------------------------------------------------\nTotal Price:\t\t\t     "+total_price+"\n-------------------------------------------------------";
-       return s;
+       }
+       if(n==2){
+           for(Staff st:Staff.getStaffList()){
+               if(st.getStaffId()==id){
+                   s=s+"-------------------------------------------------------\n\t\t     Staff Details\n-------------------------------------------------------\n"+st.toString()+"\n";
+               }
+           }
+           s=s+"-------------------------------------------------------\n"+String.format("%-35s","SELECTED ITEMS")+"PRICES\n-------------------------------------------------------\n"
+               +String.format("%-35s", "ENTRANCE FEE")+""+this.enterfee+"\n";
+       for(OrderedItem o:StaffCheckin.getItemOrders()){
+            s=s+String.format("%-35s", o.getItemName())+""+o.getItemName().getItemPrize()+"\n";
+            this.total_price+=o.getItemName().getItemPrize();
+        }
+        for(OrderedDrink o:StaffCheckin.getDrinkOrders()){
+            s=s+String.format("%-35s",o.getDrinkName())+""+o.getDrinkName().getDrinkPrice()+"\n";
+            this.total_price+=o.getDrinkName().getDrinkPrice();
+            
+        }
+        s=s+"-------------------------------------------------------\nTotal Price:\t\t\t     "+total_price+"\n-------------------------------------------------------";
+       }
+        return s;
    }
     
 }
