@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Pavan Kumar Atmakuri
+ * @author Sandhya Nidigonda
  */
 public class OrderedItem {
     private Items itemName;
@@ -18,11 +18,17 @@ public class OrderedItem {
     }
  
    
-
+/**
+ * 
+ * @return Ordered Items
+ */
     public Items getItemName() {
         return itemName;
     }
-
+/**
+ * 
+ * @param itemName 
+ */
     public void setItemName(Items itemName) {
         this.itemName = itemName;
     }

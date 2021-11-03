@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Pavan Kumar Atmakuri
+ * @author Sandhya Nidigonda
  */
 public class OrderedDrink {
     private Drinks drinkName;
@@ -17,11 +17,17 @@ public class OrderedDrink {
         this.drinkName = drinkName;
     }
    
-
+/**
+ * 
+ * @return ordered drinks
+ */
     public Drinks getDrinkName() {
         return drinkName;
     }
-
+/**
+ * 
+ * @param drinkName 
+ */
     public void setDrinkName(Drinks drinkName) {
         this.drinkName = drinkName;
     }
