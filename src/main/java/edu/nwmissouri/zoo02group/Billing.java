@@ -8,22 +8,42 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Pavan Kumar Atmakuri
+ * @author Tejaswini Challa
  */
 public class Billing {
     private static double total_price=0.0;
     Checkin check=new Checkin();
+
+    /**
+     *
+     */
     public static double enterfee=0.00;
+
+    /**
+     *
+     */
     public Billing(){}
 
+    /**
+     *
+     * @return total_price
+     */
     public double getTotal_price() {
         return total_price;
     }
 
+    /**
+     *
+     * @param tp
+     */
     public void setTotal_price(double tp) {
         this.enterfee=tp;
         this.total_price += tp;
     }
+
+    /**
+     * 
+     */
     public void findCost(){
         
         
@@ -37,7 +57,12 @@ public class Billing {
         
     }
 
-   public String printBill(int id){
+    /**
+     *
+     * @param id
+     * @return s
+     */
+    public String printBill(int id){
        String s="";
        Checkin c=new Checkin();
        for(Visitor v:Visitor.getVisitorList())
