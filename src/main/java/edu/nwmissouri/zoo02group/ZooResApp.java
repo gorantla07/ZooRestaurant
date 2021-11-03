@@ -22,6 +22,7 @@ public class ZooResApp {
         System.out.println("Are you a \n1. vistor\n2. Staff ");
         Billing billing = new Billing();
         Checkin ci = new Checkin();
+        StaffCheckin sci=new StaffCheckin();
         Visitor v=new Visitor();
         int n = s.nextInt();
         switch (n) {
@@ -36,7 +37,7 @@ public class ZooResApp {
                         boolean check1 = RegularVisitor.check(custId);
                         if (check1) {
                             billing.setTotal_price(5.44);
-                            ci.chooice(custId);
+                            ci.chooice(custId,n);
                             //checkin(custId);
                         } else {
                             System.out.println("Your Id is in Correct");
@@ -55,7 +56,7 @@ public class ZooResApp {
                         NewVisitor t = new NewVisitor(fname, lname, age, gender);
                         billing.setTotal_price(7.45);
 
-                        ci.chooice(t.id);
+                        ci.chooice(t.id,n);
                         //checkin(t.id);
                     }
 
@@ -67,14 +68,13 @@ public class ZooResApp {
                 boolean check2 = Staff.check(empid);
                 if (check2) {
                     billing.setTotal_price(0.00);
-                    //Staffcheckin();
+                    Visitor.creat();
+                    sci.chooice(empid,n);
                 } else {
                     System.out.println("Your Id is in Correct");
                 }
 
             }
         }
-
-        //SpringApplication.run(ZooRestaurantApplication.class, args);
     }
 }

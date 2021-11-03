@@ -15,6 +15,22 @@ public abstract class Person {
     protected String lastName;
     protected int age;
     protected String gender;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public String getGender() {
+        return gender;
+    }
     
     /**
      * Constructor without parameters
@@ -42,8 +58,10 @@ public abstract class Person {
      */
     @Override
     public String toString() {
-        return "Name: " + firstName + " " + lastName + "\nage: " + age + "\ngender: " + gender + '}';
+        return "Name: " + this.getFirstName() + " " + this.getLastName() + "\nage: " + this.getAge() + "\ngender: " + this.getGender();
     }
+    
+   
     
    
     
