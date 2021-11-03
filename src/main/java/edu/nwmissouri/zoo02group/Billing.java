@@ -81,7 +81,7 @@ public class Billing {
         for(OrderedDrink o:check.getDrinkOrders()){
             s=s+String.format("%-35s",o.getDrinkName())+""+o.getDrinkName().getDrinkPrice()+"\n";
         }
-        s=s+"-------------------------------------------------------\nTotal Price:\t\t\t     "+total_price+"\n-------------------------------------------------------";
+        s=s+"-------------------------------------------------------\nTotal Price:\t\t\t     "+Math.round(total_price*100.0)/100.0+"\n-------------------------------------------------------";
        }
        if(n==2){
            for(Staff st:Staff.getStaffList()){
@@ -100,7 +100,7 @@ public class Billing {
             this.total_price+=o.getDrinkName().getDrinkPrice();
             
         }
-        s=s+"-------------------------------------------------------\nTotal Price:\t\t\t     "+total_price+"\n-------------------------------------------------------";
+        s=s+"-------------------------------------------------------\nTotal Price:\t\t\t     "+Math.round(total_price*100.0)/100.0+"\n-------------------------------------------------------";
        }
         return s;
    }

@@ -4,6 +4,7 @@
  */
 package edu.nwmissouri.zoo02group;
 
+import edu.nwmissouri.zoo04lab.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -48,6 +49,8 @@ public class StaffCheckin {
 
             switch (ch) {
                 case 1 -> {
+                    visitAnimals va=new visitAnimals();
+                    va.selectedAnimal();
 
                 }
                 case 2 -> {
