@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo02group;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import edu.nwmissouri.zoo04lab.*;
 /**
  *
  * @author Pavan Kumar Atmakuri
@@ -52,7 +52,8 @@ public class Checkin {
 
             switch (ch) {
                 case 1 -> {
-
+                    visitAnimals va=new visitAnimals();
+                    va.selectedAnimal();
                 }
                 case 2 -> {
 
