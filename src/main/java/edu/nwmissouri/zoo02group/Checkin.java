@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo02group;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
+import edu.nwmissouri.zoo04lab.*;
 /**
  *
  * @author Pavan Kumar Atmakuri
@@ -14,32 +14,18 @@ import java.util.Scanner;
 public class Checkin {
     private static  ArrayList<OrderedItem> itemOrders=new ArrayList<>();
     private static  ArrayList<OrderedDrink> drinkOrders= new ArrayList<>();
-    private static String st="";
-    private static String sd="";
-    private static double cost=0.0;
 
-    public static void setCost(double cost) {
-        Checkin.cost = cost;
-    }
-
-    public static String getSt() {
-        return st;
-    }
-
-    public static String getSd() {
-        return sd;
-    }
-
-    
-
-    public double getCost() {
-        return cost;
-    }
-
+   /**
+    * 
+    * @return itemOrdered List
+    */
     public static ArrayList<OrderedItem> getItemOrders() {
         return itemOrders;
     }
-
+    /**
+     * 
+     * @return drinkOrdered List
+     */
     public static ArrayList<OrderedDrink> getDrinkOrders() {
         return drinkOrders;
     }
@@ -50,8 +36,12 @@ public class Checkin {
    
     public Checkin() {
     }
-
-    public void chooice(int id) {
+    /**
+     * 
+     * @param id getting visitor id
+     * @param c getting type of entered
+     */
+    public void chooice(int id,int c) {
 
         Scanner s = new Scanner(System.in);
         
@@ -62,7 +52,8 @@ public class Checkin {
 
             switch (ch) {
                 case 1 -> {
-
+                    visitAnimals va=new visitAnimals();
+                    va.selectedAnimal();
                 }
                 case 2 -> {
 
@@ -130,7 +121,7 @@ public class Checkin {
                 case 3 -> {
                     Billing b = new Billing();
                     b.findCost();
-                    System.out.println(b.printBill(id));
+                    System.out.println(b.printBill(id,c));
                    
                 }
             }

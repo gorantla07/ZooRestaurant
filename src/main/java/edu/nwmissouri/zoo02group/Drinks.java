@@ -6,13 +6,33 @@ package edu.nwmissouri.zoo02group;
 
 /**
  *
- * @author Pavan Kumar Atmakuri
+ * @author Tejaswini Challa
  */
 public enum Drinks {
+
+    /**
+     * 
+     */
     FOUNTAIN_SODA_20_OZ(2.99),
+
+    /**
+     *
+     */
     RED_BULL(4.29),
+
+    /**
+     *
+     */
     IZZE_SPARKLING_JUICE(2.79),
+
+    /**
+     *
+     */
     FRESH_BREWED_ICED_TEA(2.99),
+
+    /**
+     *
+     */
     WATER(0.00);
     private final double drinkPrice;
 
@@ -20,6 +40,10 @@ public enum Drinks {
         this.drinkPrice = drinkPrice;
     }
 
+    /**
+     *
+     * @return drinkPrice
+     */
     public double getDrinkPrice() {
         return drinkPrice;
     }
