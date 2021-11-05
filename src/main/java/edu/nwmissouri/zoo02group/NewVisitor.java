@@ -6,7 +6,7 @@ package edu.nwmissouri.zoo02group;
 
 /**
  *
- * @author Pavan Kumar Atmakuri
+ * @author Rohan Kondaveeti
  */
 public class NewVisitor{
     
