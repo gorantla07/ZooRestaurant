@@ -22,7 +22,6 @@ public class visitAnimals {
     {
         System.out.println();
                 System.out.println("What animals would you like to see?");
-                System.out.println("Enter a number to choose, 0 to exit.");
 
                 System.out.print(" 1.Aardvark            ");
                 System.out.print(" 2.Abyssinian          ");
