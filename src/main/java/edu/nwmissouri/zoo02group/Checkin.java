@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import edu.nwmissouri.zoo04lab.*;
 /**
- *
+ * choosing type of checking based upon user interest
  * @author Pavan Kumar Atmakuri
  */
 public class Checkin {

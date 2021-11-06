@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo02group;
 import java.util.ArrayList;
 
 /**
- *
+ * storing Items orders in this class
  * @author Sandhya Nidigonda
  */
 public class OrderedItem {

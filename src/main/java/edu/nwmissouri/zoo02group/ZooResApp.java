@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo02group;
 import java.util.Scanner;
 
 /**
- *
+ * This is main class
  * @author Pavan Kumar Atmakuri
  */
 public class ZooResApp {

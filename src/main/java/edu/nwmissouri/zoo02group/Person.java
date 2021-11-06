@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo02group;
 
 /**
- *
+ * this person abstract class 
  * @author Harika Chintala
  */
 

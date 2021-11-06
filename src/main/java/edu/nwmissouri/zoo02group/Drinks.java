@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo02group;
 
 /**
- *
+ *enum for drink list and setting the prizes to
  * @author Tejaswini Challa
  */
 public enum Drinks {

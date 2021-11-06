@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- *
+ * Controller that handles the default request ("/").
  * @author Pavan Kumar Atmakuri
  */
 @Controller

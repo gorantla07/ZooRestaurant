@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo02group;
 import java.util.ArrayList;
 
 /**
- *
+ * storing the staff data extending person abstract class
  * @author Manoj Gorantla
  */
 public class Staff extends Person {
