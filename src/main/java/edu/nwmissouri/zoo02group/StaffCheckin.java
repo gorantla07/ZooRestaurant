@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * choosing type of checking based upon staff interest
  * @author Pavan Kumar Atmakuri
  */
 public class StaffCheckin {

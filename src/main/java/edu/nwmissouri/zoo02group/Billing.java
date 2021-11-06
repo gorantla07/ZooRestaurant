@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo02group;
 import java.util.ArrayList;
 
 /**
- *
+ * this class is for printing the bill
  * @author Tejaswini Challa
  */
 public class Billing {

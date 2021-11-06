@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo02group;
 
 /**
- *
+ * enum for Items list and setting the prizes to
  * @author Tejaswini Challa
  */
 public enum Items {

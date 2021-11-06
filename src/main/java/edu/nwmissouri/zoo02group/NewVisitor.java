@@ -5,7 +5,7 @@
 package edu.nwmissouri.zoo02group;
 
 /**
- *
+ * storing the ne visitor details
  * @author Rohan Kondaveeti
  */
 public class NewVisitor{

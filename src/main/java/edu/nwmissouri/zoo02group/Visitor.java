@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo02group;
 import java.util.ArrayList;
 
 /**
- *
+ * storing visitor data and extending the person abstract class
  * @author Manoj Gorantla
  */
 public class Visitor extends Person {

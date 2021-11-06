@@ -7,7 +7,7 @@ package edu.nwmissouri.zoo02group;
 import java.util.ArrayList;
 
 /**
- *
+ * checking visitor is there are not  
  * @author Rohan Kondaveeti 
  */
 public class RegularVisitor{
