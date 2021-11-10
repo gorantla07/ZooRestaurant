@@ -27,10 +27,6 @@ public class NewVisitor{
         v.setVisitorList(v);
         System.out.println("Hello "+v.firstName+" Welcome into Maryville Zoo");
     }
-
-    NewVisitor() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
    
     
 }
