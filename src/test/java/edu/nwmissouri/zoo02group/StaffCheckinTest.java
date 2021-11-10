@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 /**
  *
- * @author Pavan Kumar Atmakuri
+ * @author Harika Chintala
  */
 public class StaffCheckinTest {
     
