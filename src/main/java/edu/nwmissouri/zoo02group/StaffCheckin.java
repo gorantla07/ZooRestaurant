@@ -4,7 +4,7 @@
  */
 package edu.nwmissouri.zoo02group;
 
-import edu.nwmissouri.zoo04lab.*;
+import edu.nwmissouri.animalList.visitAnimals;
 import java.util.ArrayList;
 import java.util.Scanner;
 

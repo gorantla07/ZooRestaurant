@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.nwmissouri.zoo02group"},{"l":"edu.nwmissouri.zoo04lab"}];updateSearchResults();
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"edu.nwmissouri.animalList"},{"l":"edu.nwmissouri.zoo02group"}];updateSearchResults();

@@ -32,7 +32,7 @@ public class ZooResApp {
 
                 switch (h) {
                     case 1 -> {
-                        System.out.println("Enter your visitor Id: ");
+                        System.out.println("Enter your visitor Id: (between 101 to 104)");
                         int custId = s.nextInt();
                         boolean check1 = RegularVisitor.check(custId);
                         if (check1) {
@@ -63,7 +63,7 @@ public class ZooResApp {
                 }
             }
             case 2 -> {
-                System.out.println("Enter your employeeId");
+                System.out.println("Enter your employeeId (between 1001 to 1004)");
                 int empid = s.nextInt();
                 boolean check2 = Staff.check(empid);
                 if (check2) {
