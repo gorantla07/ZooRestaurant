@@ -27,11 +27,8 @@ Open Powershell Here as Admininstrator in your root project folder (the one with
 2. Name of our app :: ZooRestaurant
 3. Package we work under: edu.nwmissouri.zoo02group
 4. Will you make a console app? Or a web app? :: console app
-5. Display the UML class diagram. 
-
+5. Display the UML class diagram -> drawn by: Harika Chintala
 ![Zoogroup2](ZooGroup.png)
-
-drawn by: Harika Chintala
 6. Group repo Created By :: Manoj Gorantla
 7.  repo collaborators (full rights, accept PRs, etc.) :: 2 (Pavan Atmakuri, Harika Chintala) & how many contributors (working as they did in zoo04lab) :: 4(Manoj Gorantla, Rohan Kondaveeti, Sandhya Nidigonda, Tejaswini Challa)
 8. The App main() method Created By: Pavan Atmakuri
@@ -41,34 +38,33 @@ drawn by: Harika Chintala
 
 ## Pavan Atmakuri :
 
-Person Abstract Class
-CheckIn Class
-ZooApp main class
-ZooRegistration Class
+- Person Abstract Class
+- CheckIn Class
+- ZooApp main class
 
 
 ## Manoj Gorantla :
 
-Visitor Class
-Staff Class 
+- Visitor Class
+- Staff Class 
 
 ## Rohan Kondaveeti :
 
-RegularVisitor Class
-NewVisitor Class 
+- RegularVisitor Class
+- NewVisitor Class 
 
 ## Harika Chintala :
 
-Animal List
-Person class
+- Animal List
+- Person class
 
 ## Sandhya Nidigonda 
 
-OrderDrink
-OrderItem
+- OrderDrink
+- OrderItem
 
 ## Tejaswini Challa :
 
-Items Enum class
-Drink Enum Class
-Billing Class
+- Items Enum class
+- Drink Enum Class
+- Billing Class
