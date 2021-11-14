@@ -1,6 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit5TestClass.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/UnitTests/JUnit4TestClass.java to edit this template
  */
 package edu.nwmissouri.zoo02group;
 
@@ -49,9 +49,9 @@ public class RegularVisitorTest {
     @Test
     public void testCheckFalse() {
         System.out.println("check");
-        boolean expResult = true;
+        boolean expResult = false;
         boolean result = RegularVisitor.check(108);
-        assertNotEquals(expResult, result);
+        assertEquals(expResult, result);
     }
     
 }

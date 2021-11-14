@@ -31,6 +31,15 @@ public class StaffCheckin {
         return drinkOrders;
     }
 
+    public static void setItemOrders(ArrayList<OrderedItem> itemOrders) {
+        StaffCheckin.itemOrders = itemOrders;
+    }
+
+    public static void setDrinkOrders(ArrayList<OrderedDrink> drinkOrders) {
+        StaffCheckin.drinkOrders = drinkOrders;
+    }
+    
+
     public StaffCheckin() {
     }
     /**
