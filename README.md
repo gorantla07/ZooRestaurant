@@ -27,48 +27,45 @@ Open Powershell Here as Admininstrator in your root project folder (the one with
 2. Name of our app :: ZooRestaurant
 3. Package we work under: edu.nwmissouri.zoo02group
 4. Will you make a console app? Or a web app? :: console app
-5. Display the UML class diagram. 
-
-![Zoogroup2](ZooGroup.png)
-
-drawn by: Harika Chintala
+5. Display the UML class diagram -> drawn by: Harika Chintala
+![Zoogroup2](ZooGroup02.png)
 6. Group repo Created By :: Manoj Gorantla
 7.  repo collaborators (full rights, accept PRs, etc.) :: 2 (Pavan Atmakuri, Harika Chintala) & how many contributors (working as they did in zoo04lab) :: 4(Manoj Gorantla, Rohan Kondaveeti, Sandhya Nidigonda, Tejaswini Challa)
 8. The App main() method Created By: Pavan Atmakuri
 9. first enum Created By :: Tejaswini Challa -> enum name:: items
-10.second enum Created By:: Tejaswini Challa -> enum name:: drinks
-11.Listing the each group member + their classes
+10. second enum Created By:: Tejaswini Challa -> enum name:: drinks
 
-## Pavan Atmakuri :
+> Listing the each group member + their classes
 
-Person Abstract Class
-CheckIn Class
-ZooApp main class
-ZooRegistration Class
+## Pavan Atmakuri
+
+- Person Abstract Class
+- CheckIn Class
+- ZooApp main class
 
 
-## Manoj Gorantla :
+## Manoj Gorantla
 
-Visitor Class
-Staff Class 
+- Visitor Class
+- Staff Class 
 
-## Rohan Kondaveeti :
+## Rohan Kondaveeti
 
-RegularVisitor Class
-NewVisitor Class 
+- RegularVisitor Class
+- NewVisitor Class 
 
-## Harika Chintala :
+## Harika Chintala
 
-Animal List
-Person class
+- Animal List
+- Person class
 
 ## Sandhya Nidigonda 
 
-OrderDrink
-OrderItem
+- OrderDrink
+- OrderItem
 
-## Tejaswini Challa :
+## Tejaswini Challa
 
-Items Enum class
-Drink Enum Class
-Billing Class
+- Items Enum class
+- Drink Enum Class
+- Billing Class
