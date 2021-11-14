@@ -37,24 +37,24 @@ Open Powershell Here as Admininstrator in your root project folder (the one with
 
 > Listing the each group member + their classes
 
-## Pavan Atmakuri :
+## Pavan Atmakuri
 
 - Person Abstract Class
 - CheckIn Class
 - ZooApp main class
 
 
-## Manoj Gorantla :
+## Manoj Gorantla
 
 - Visitor Class
 - Staff Class 
 
-## Rohan Kondaveeti :
+## Rohan Kondaveeti
 
 - RegularVisitor Class
 - NewVisitor Class 
 
-## Harika Chintala :
+## Harika Chintala
 
 - Animal List
 - Person class
@@ -64,7 +64,7 @@ Open Powershell Here as Admininstrator in your root project folder (the one with
 - OrderDrink
 - OrderItem
 
-## Tejaswini Challa :
+## Tejaswini Challa
 
 - Items Enum class
 - Drink Enum Class
