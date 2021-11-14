@@ -4,12 +4,12 @@
 
 A project of zooRestaurant implementation 
 
-## API
+## Javadoc API
 
 - Explore API at <https://gorantla07.github.io/ZooRestaurant/docs/index.html>
 - Generate API with `mvn javadoc:javadoc`
 
-## CodeCoverage
+## Test CodeCoverage
 
 - Explore API at <https://gorantla07.github.io/ZooRestaurentCodeCoverage/index.html>
 - git repo Link for codecoverage <https://github.com/gorantla07/ZooRestaurentCodeCoverage>
