@@ -112,5 +112,14 @@ public class StaffTest {
         boolean result = Staff.check(empid);
         assertEquals(expResult, result);
     }
+    @Test
+    public void testCheck1() {
+        System.out.println("check");
+        Staff.creat();
+        int empid = 1009;
+        boolean expResult = false;
+        boolean result = Staff.check(empid);
+        assertEquals(expResult, result);
+    }
 
 }

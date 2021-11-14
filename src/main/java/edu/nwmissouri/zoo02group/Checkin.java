@@ -30,6 +30,14 @@ public class Checkin {
         return drinkOrders;
     }
 
+    public static void setItemOrders(ArrayList<OrderedItem> itemOrders) {
+        Checkin.itemOrders = itemOrders;
+    }
+
+    public static void setDrinkOrders(ArrayList<OrderedDrink> drinkOrders) {
+        Checkin.drinkOrders = drinkOrders;
+    }
+
    
    
 
@@ -71,7 +79,6 @@ public class Checkin {
                                 int u = s.nextInt();
                                 switch (u) {
                                     case 1 -> {
-                                        System.out.println("hi");
                                         itemOrders.add(new OrderedItem(Items.Veg_Biriyani));
                                         
                                     }
