@@ -34,7 +34,8 @@ Open Powershell Here as Admininstrator in your root project folder (the one with
 8. The App main() method Created By: Pavan Atmakuri
 9. first enum Created By :: Tejaswini Challa -> enum name:: items
 10. second enum Created By:: Tejaswini Challa -> enum name:: drinks
-## 11. Listing the each group member + their classes
+
+> Listing the each group member + their classes
 
 ## Pavan Atmakuri :
 
