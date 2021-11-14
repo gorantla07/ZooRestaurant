@@ -28,13 +28,13 @@ Open Powershell Here as Admininstrator in your root project folder (the one with
 3. Package we work under: edu.nwmissouri.zoo02group
 4. Will you make a console app? Or a web app? :: console app
 5. Display the UML class diagram -> drawn by: Harika Chintala
-![Zoogroup2](ZooGroup.png)
+![Zoogroup2](ZooGroup02.png)
 6. Group repo Created By :: Manoj Gorantla
 7.  repo collaborators (full rights, accept PRs, etc.) :: 2 (Pavan Atmakuri, Harika Chintala) & how many contributors (working as they did in zoo04lab) :: 4(Manoj Gorantla, Rohan Kondaveeti, Sandhya Nidigonda, Tejaswini Challa)
 8. The App main() method Created By: Pavan Atmakuri
 9. first enum Created By :: Tejaswini Challa -> enum name:: items
-10.second enum Created By:: Tejaswini Challa -> enum name:: drinks
-11.Listing the each group member + their classes
+10. second enum Created By:: Tejaswini Challa -> enum name:: drinks
+## 11. Listing the each group member + their classes
 
 ## Pavan Atmakuri :
 
