@@ -34,17 +34,17 @@ public enum Drinks {
      *
      */
     WATER(0.00);
-    private final double drinkPrice;
+    private final double DRINKPRICE;
 
-    private Drinks(double drinkPrice) {
-        this.drinkPrice = drinkPrice;
+    private Drinks(double DRINKPRICE) {
+        this.DRINKPRICE = DRINKPRICE;
     }
 
     /**
      *
-     * @return drinkPrice
+     * @return DRINKPRICE
      */
     public double getDrinkPrice() {
-        return drinkPrice;
+        return DRINKPRICE;
     }
 }

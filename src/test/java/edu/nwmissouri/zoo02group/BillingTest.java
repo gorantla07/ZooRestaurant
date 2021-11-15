@@ -29,7 +29,7 @@ public class BillingTest {
     public static void setUpClass() {
         ArrayList<OrderedItem> itemOrders = new ArrayList<>();
         ArrayList<OrderedDrink> drinkOrders = new ArrayList<>();
-        itemOrders.add(new OrderedItem(Items.Veg_Biriyani));
+        itemOrders.add(new OrderedItem(Items.VEG_BIRYANI));
         drinkOrders.add(new OrderedDrink(Drinks.FOUNTAIN_SODA_20_OZ));
         Checkin.setDrinkOrders(drinkOrders);
         Checkin.setItemOrders(itemOrders);
@@ -108,7 +108,7 @@ public class BillingTest {
                 + "SELECTED ITEMS                     PRICES\n"
                 + "-------------------------------------------------------\n"
                 + "ENTRANCE FEE                       5.44\n"
-                + "Veg_Biriyani                       9.99\n"
+                + "VEG_BIRYANI                       9.99\n"
                 + "FOUNTAIN_SODA_20_OZ                2.99\n"
                 + "-------------------------------------------------------\n"
                 + "Total Price:			     18.42\n"
@@ -135,7 +135,7 @@ public class BillingTest {
                 + "SELECTED ITEMS                     PRICES\n"
                 + "-------------------------------------------------------\n"
                 + "ENTRANCE FEE                       0.0\n"
-                + "Veg_Biriyani                       9.99\n"
+                + "VEG_BIRYANI                       9.99\n"
                 + "FOUNTAIN_SODA_20_OZ                2.99\n"
                 + "-------------------------------------------------------\n"
                 + "Total Price:			     31.4\n"
