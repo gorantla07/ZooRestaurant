@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author Manoj Gorantla
  */
 public class Staff extends Person {
-     private static ArrayList<Staff> StaffList=new ArrayList<>();
+     private static ArrayList<Staff> staffList=new ArrayList<>();
      private int staffId;
     public Staff(int staffId,String firstName, String lastName, int age, String gender) {
         super(firstName, lastName, age, gender);
@@ -21,10 +21,10 @@ public class Staff extends Person {
      * Added the staff data to create method.
      */
      public static void creat(){  
-       StaffList.add(new Staff(1001,"Uday","allipi",26,"Male"));
-       StaffList.add(new Staff(1002,"Rohit","Gangguru",24,"Male"));
-       StaffList.add(new Staff(1003,"Nikhil","Nagabandi",25,"Male"));
-       StaffList.add(new Staff(1004,"Parasana","allipi",22,"Male"));
+       staffList.add(new Staff(1001,"Uday","allipi",26,"Male"));
+       staffList.add(new Staff(1002,"Rohit","Gangguru",24,"Male"));
+       staffList.add(new Staff(1003,"Nikhil","Nagabandi",25,"Male"));
+       staffList.add(new Staff(1004,"Parasana","allipi",22,"Male"));
    }
      
      /**
@@ -33,12 +33,12 @@ public class Staff extends Person {
       */
 
     public static ArrayList<Staff> getStaffList() {
-        return StaffList;
+        return staffList;
     }
     
 
-    public static void setStaffList(ArrayList<Staff> StaffList) {
-        Staff.StaffList = StaffList;
+    public static void setStaffList(ArrayList<Staff> staffList) {
+        Staff.staffList = staffList;
     }
     
     /**

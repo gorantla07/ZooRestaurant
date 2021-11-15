@@ -37,7 +37,7 @@ public class ZooResApp {
                         boolean check1 = RegularVisitor.check(custId);
                         if (check1) {
                             billing.setTotal_price(5.44);
-                            ci.chooice(custId,n);
+                            ci.choose(custId,n);
                             //checkin(custId);
                         } else {
                             System.out.println("Your Id is in Correct");
@@ -56,7 +56,7 @@ public class ZooResApp {
                         NewVisitor t = new NewVisitor(fname, lname, age, gender);
                         billing.setTotal_price(7.45);
 
-                        ci.chooice(t.id,n);
+                        ci.choose(t.id,n);
                         //checkin(t.id);
                     }
 

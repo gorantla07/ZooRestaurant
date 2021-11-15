@@ -64,7 +64,7 @@ public class ItemsTest {
     @Test
     public void testGetItemPrize() {
         System.out.println("getItemPrize");
-        Items instance = Items.Veg_Biriyani;
+        Items instance = Items.VEG_BIRYANI;
         double expResult = 9.99;
         double result = instance.getItemPrize();
         assertEquals(expResult, result);
