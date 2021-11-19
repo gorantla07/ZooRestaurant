@@ -45,6 +45,7 @@ public class CowGroup {
             System.out.println();
             System.out.println("******************");
             System.out.println();
+           
         });
         System.out.println("Nice Cow - that was fun!");
         System.out.println("CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC");
