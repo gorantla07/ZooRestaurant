@@ -47,7 +47,7 @@ public class StaffCheckin {
      * @param id getting staff Id
      * @param n type of entered person
      */
-    public void chooice(int id,int n) {
+    public void choose(int id,int n) {
 
         Scanner s = new Scanner(System.in);
         try{

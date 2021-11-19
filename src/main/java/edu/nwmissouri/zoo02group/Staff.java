@@ -8,72 +8,77 @@ import java.util.ArrayList;
 
 /**
  * storing the staff data extending person abstract class
+ *
  * @author Manoj Gorantla
  */
 public class Staff extends Person {
-     private static ArrayList<Staff> staffList=new ArrayList<>();
-     private int staffId;
-    public Staff(int staffId,String firstName, String lastName, int age, String gender) {
+
+    private static ArrayList<Staff> staffList = new ArrayList<>();
+    private int staffId;
+
+    public Staff(int staffId, String firstName, String lastName, int age, String gender) {
         super(firstName, lastName, age, gender);
-        this.staffId=staffId;
+        this.staffId = staffId;
     }
+
     /**
      * Added the staff data to create method.
      */
-     public static void creat(){  
-       staffList.add(new Staff(1001,"Uday","allipi",26,"Male"));
-       staffList.add(new Staff(1002,"Rohit","Gangguru",24,"Male"));
-       staffList.add(new Staff(1003,"Nikhil","Nagabandi",25,"Male"));
-       staffList.add(new Staff(1004,"Parasana","allipi",22,"Male"));
-   }
-     
-     /**
-      * 
-      * @return the staff list 
-      */
+    public static void creat() {
+        staffList.add(new Staff(1001, "Uday", "allipi", 26, "Male"));
+        staffList.add(new Staff(1002, "Rohit", "Gangguru", 24, "Male"));
+        staffList.add(new Staff(1003, "Nikhil", "Nagabandi", 25, "Male"));
+        staffList.add(new Staff(1004, "Parasana", "allipi", 22, "Male"));
+    }
 
+    /**
+     *
+     * @return the staff list
+     */
     public static ArrayList<Staff> getStaffList() {
         return staffList;
     }
-    
 
     public static void setStaffList(ArrayList<Staff> staffList) {
         Staff.staffList = staffList;
     }
-    
+
     /**
-     * 
+     *
      * @return staff id
      */
     public int getStaffId() {
         return staffId;
     }
-    
+
     /**
-     * 
-     * @param staffId 
+     *
+     * @param staffId
      */
     public void setStaffId(int staffId) {
         this.staffId = staffId;
     }
-     
+
     /**
-     * 
+     *
      * @param empid
      * @return false.
      */
-    public static boolean check(int empid)
-   {
-       
-       Staff.creat();
-       for(Staff v:Staff.getStaffList())
-       {
-       if(v.getStaffId()==empid)
-       {
-           System.out.println("Hello "+v.firstName+" Welcome into Maryville Zoo");
-           return true;
-       }
-       }
-       return false;
-   }
+    public static boolean check(int empid) {
+
+        Staff.creat();
+        try {
+            for (Staff v : Staff.getStaffList()) {
+                if (v.getStaffId() == empid) {
+                    System.out.println("Hello " + v.firstName + " Welcome into Maryville Zoo");
+                    return true;
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("Exception class name:" + e.getClass());
+            System.out.println("Expection message: "+ e.getMessage());
+        }
+        return false;
+
+    }
 }
