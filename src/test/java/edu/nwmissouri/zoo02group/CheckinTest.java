@@ -44,7 +44,7 @@ public class CheckinTest {
     public void testGetItemOrders() {
         System.out.println("getItemOrders");
         ArrayList<OrderedItem> itemOrders=new ArrayList<>();
-        Checkin.getItemOrders().add(new OrderedItem(Items.Veg_Biriyani));
+        Checkin.getItemOrders().add(new OrderedItem(Items.VEG_BIRYANI));
         ArrayList<OrderedItem> expResult = Checkin.getItemOrders();
         
         ArrayList<OrderedItem> result = Checkin.getItemOrders();

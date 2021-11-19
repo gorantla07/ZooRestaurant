@@ -54,7 +54,7 @@ public class OrderedItemTest {
     @Test
     public void testSetItemName() {
         System.out.println("setItemName");
-        Items itemName = Items.Chicken_Biriyani;
+        Items itemName = Items.CHICKEN_BIRYANI;
         OrderedItem instance = new OrderedItem(Items.Afghini_chicken);;
         instance.setItemName(itemName);
     }

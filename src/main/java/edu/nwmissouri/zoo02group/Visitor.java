@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author Manoj Gorantla
  */
 public class Visitor extends Person {
-    int visitorId;
+    public int visitorId;
     private static ArrayList<Visitor> visitorList=new ArrayList<>();
     
     /**

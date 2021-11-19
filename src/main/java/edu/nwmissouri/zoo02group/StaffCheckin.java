@@ -72,24 +72,24 @@ public class StaffCheckin {
                         k = s.nextInt();
                         switch (k) {
                             case 1 -> {
-                                System.out.println("1. Veg_Biriyani\n2. Chicken_Biriyani\n3. Rotti\n4. prawls_Biriyani\n5. Afghini_chicken");
+                                System.out.println("1. VEG_BIRYANI\n2. CHICKEN_BIRYANI\n3. ROTTI\n4. PRAWNS_BIRYANI\n5. Afghini_chicken");
                                 System.out.println("What Item do you want");
 
                                 int u = s.nextInt();
                                 switch (u) {
                                     case 1 -> {
                                         System.out.println("hi");
-                                        itemOrders.add(new OrderedItem(Items.Veg_Biriyani));
+                                        itemOrders.add(new OrderedItem(Items.VEG_BIRYANI));
                                         
                                     }
                                     case 2 -> {
-                                        itemOrders.add(new OrderedItem(Items.Chicken_Biriyani));
+                                        itemOrders.add(new OrderedItem(Items.CHICKEN_BIRYANI));
                                     }
                                     case 3 -> {
-                                        itemOrders.add(new OrderedItem(Items.Rotti));
+                                        itemOrders.add(new OrderedItem(Items.ROTTI));
                                     }
                                     case 4 -> {
-                                        itemOrders.add(new OrderedItem(Items.prawls_Biriyani));
+                                        itemOrders.add(new OrderedItem(Items.PRAWNS_BIRYANI));
                                     }
                                     case 5 -> {
                                         itemOrders.add(new OrderedItem(Items.Afghini_chicken));
