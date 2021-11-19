@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  * checking visitor is there are not  
- * @author Rohan Kondaveeti 
+ * @author Sandhya Nidigonda
  */
 public class RegularVisitor{
     
@@ -18,6 +18,7 @@ public class RegularVisitor{
    {
        
        Visitor.creat();
+       try{
        for(Visitor v:Visitor.getVisitorList())
        {
        if(v.getVisitorId()==vistid)
@@ -25,8 +26,15 @@ public class RegularVisitor{
            System.out.println("Hello "+v.firstName+" Welcome into Maryville Zoo");
            return true;
        }
+      
+       }
+       }
+       catch (Exception e){
+           System.out.println("Please enter a valid vistor Id");
        }
        return false;
+       
    }
+       
     
 }
