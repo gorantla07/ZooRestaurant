@@ -50,7 +50,7 @@ public class StaffCheckin {
     public void chooice(int id,int n) {
 
         Scanner s = new Scanner(System.in);
-        
+        try{
         int ch;
         do {
             System.out.println("what you want to see\n1. visit the animals\n2. Food court\n3. List visitors Data\n4. exit");
@@ -145,5 +145,10 @@ public class StaffCheckin {
         } while (ch != 4);
 
     }
+    catch (Exception e) {
+            System.out.println("Exception class name:" + e.getClass());
+            System.out.println("Expection message: "+ e.getMessage());
+        }
+}
     
 }
