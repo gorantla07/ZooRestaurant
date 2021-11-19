@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 /**
  * This is main class
+ *
  * @author Pavan Kumar Atmakuri
  */
 public class ZooResApp {
@@ -22,59 +23,64 @@ public class ZooResApp {
         System.out.println("Are you a \n1. vistor\n2. Staff ");
         Billing billing = new Billing();
         Checkin ci = new Checkin();
-        StaffCheckin sci=new StaffCheckin();
-        Visitor v=new Visitor();
-        int n = s.nextInt();
-        switch (n) {
-            case 1 -> {
-                System.out.println("Are you a\n1. Regular Customer\n2. New Customer");
-                int h = s.nextInt();
+        StaffCheckin sci = new StaffCheckin();
+        Visitor v = new Visitor();
+        try {
+            int n = s.nextInt();
+            switch (n) {
+                case 1 -> {
+                    System.out.println("Are you a\n1. Regular Customer\n2. New Customer");
+                    int h = s.nextInt();
 
-                switch (h) {
-                    case 1 -> {
-                        System.out.println("Enter your visitor Id: (between 101 to 104)");
-                        int custId = s.nextInt();
-                        boolean check1 = RegularVisitor.check(custId);
-                        if (check1) {
-                            billing.setTotal_price(5.44);
-                            ci.chooice(custId,n);
-                            //checkin(custId);
-                        } else {
-                            System.out.println("Your Id is in Correct");
+                    switch (h) {
+                        case 1 -> {
+                            System.out.println("Enter your visitor Id: (between 101 to 104)");
+                            int custId = s.nextInt();
+                            boolean check1 = RegularVisitor.check(custId);
+                            if (check1) {
+                                billing.setTotal_price(5.44);
+                                ci.chooice(custId, n);
+                                //checkin(custId);
+                            } else {
+                                System.out.println("Your Id is in Correct");
+                            }
+
+                        }
+                        case 2 -> {
+                            System.out.println("Enter your First Name: ");
+                            String fname = s.next();
+                            System.out.println("Enter your Last Name: ");
+                            String lname = s.next();
+                            System.out.println("Enter your age: ");
+                            int age = s.nextInt();
+                            System.out.println("Enter Your Gender: ");
+                            String gender = s.next();
+                            NewVisitor t = new NewVisitor(fname, lname, age, gender);
+                            billing.setTotal_price(7.45);
+
+                            ci.chooice(t.id, n);
+                            //checkin(t.id);
                         }
 
                     }
-                    case 2 -> {
-                        System.out.println("Enter your First Name: ");
-                        String fname = s.next();
-                        System.out.println("Enter your Last Name: ");
-                        String lname = s.next();
-                        System.out.println("Enter your age: ");
-                        int age = s.nextInt();
-                        System.out.println("Enter Your Gender: ");
-                        String gender = s.next();
-                        NewVisitor t = new NewVisitor(fname, lname, age, gender);
-                        billing.setTotal_price(7.45);
-
-                        ci.chooice(t.id,n);
-                        //checkin(t.id);
+                }
+                case 2 -> {
+                    System.out.println("Enter your employeeId (between 1001 to 1004)");
+                    int empid = s.nextInt();
+                    boolean check2 = Staff.check(empid);
+                    if (check2) {
+                        billing.setTotal_price(0.00);
+                        Visitor.creat();
+                        sci.chooice(empid, n);
+                    } else {
+                        System.out.println("Your Id is in Correct");
                     }
 
                 }
             }
-            case 2 -> {
-                System.out.println("Enter your employeeId (between 1001 to 1004)");
-                int empid = s.nextInt();
-                boolean check2 = Staff.check(empid);
-                if (check2) {
-                    billing.setTotal_price(0.00);
-                    Visitor.creat();
-                    sci.chooice(empid,n);
-                } else {
-                    System.out.println("Your Id is in Correct");
-                }
-
-            }
+        } catch (Exception e) {
+            System.out.println("Exception class name:" + e.getClass());
+            System.out.println("Expection message: "+ e.getMessage());
         }
     }
 }
