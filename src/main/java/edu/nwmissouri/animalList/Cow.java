@@ -5,6 +5,8 @@
  */
 package edu.nwmissouri.animalList;
 
+import java.util.Scanner;
+
 /**
  * Cow class (derived subclass of the superclass Animal)
  *
@@ -87,5 +89,26 @@ public class Cow extends Animal {
         }
     }
 
- 
+    public static void castingAndException() {
+
+        try {
+            Scanner scan = new Scanner(System.in);
+            System.out.println("TypeCasting: double to int");            
+            double x = 23.4;
+            System.out.println("Original value: " + x);
+            System.out.println("Casted value : " + (int) x);            
+            System.out.println("please enter an index number that you want to search a number in an array");
+            int val = scan.nextInt();
+            int[] myNumbers = {1, 2, 3};
+            System.out.println("The value in an array at index "+val+" is: "+myNumbers[val]);
+        } 
+        catch (Exception e) {
+            System.out.println("Something went wrong, \""+e.getMessage()+"\"");
+            System.out.println("Please enter valid array index");
+        } finally {
+            System.out.println("The 'try catch' is finished.");
+        }
+
+    }
+
 }
