@@ -41,26 +41,23 @@ public class Gerenuk extends Animal {
     {
         System.out.println("Exists in Kenya");
     }
-   public void profess() {
-        double a = 2.5;
-        int b = 2;
-        double c = getGerenukAddition(a, b);
-        System.out.printf("I know GerenukAddition! %4.2f plus %d is %4.2f \n", a, b, c);
+  public int Exceptionclass() {
+        int b = 10;
+        for (int i = 3; i >= 0; i--)
+		   try {
+            System.out.println(b / i);
+        } catch (ArithmeticException e) {
+            System.out.println(e);
+        }
+        return b;
     }
-
-    /**
-     * Custom Gerenuk function - your class must use a unique function name
-     * unique first parameter identifier unique second parameter identifier do
-     * something creative
-     *
-     * @param valueOne double input
-     * @param valueTwo int input
-     * @return double sum
-     */
-    public double getGerenukAddition(double valueOne, int valueTwo) {
-        return valueOne + valueTwo;
+    
+    public static void main(String[] args) {
+        Gerenuk g = new Gerenuk("g");
+        g.speak();
+        g.move();
+        g.Exceptionclass();
     }
-   
 
     
 
