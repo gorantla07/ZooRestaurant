@@ -36,6 +36,23 @@ public class Goat extends Animal {
     public void color() {
         System.out.println("I can be in black, brown and white color.");
     }
+    public int Exceptionclass() {
+        int c = 10;
+        for (int i = 3; i >= 0; i--)
+		   try {
+            System.out.println(c / i);
+        } catch (ArithmeticException e) {
+            System.out.println(e);
+        }
+        return c;
+    }
+    
+    public static void main(String[] args) {
+        Goat g = new Goat("g");
+        g.speak();
+        g.move();
+        g.Exceptionclass();
+    }
     
    
     
